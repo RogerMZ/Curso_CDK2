@@ -12,6 +12,7 @@ pipeline {
       parallel {
         stage('Tools Information') {
           steps {
+            sh 'env'
             sh 'node --version'
           }
         }
